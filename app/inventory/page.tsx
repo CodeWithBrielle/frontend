@@ -209,7 +209,7 @@ export default function InventoryPage() {
                         <td className="py-3 px-4 text-[var(--color-text-primary)] font-medium">{item.product_name}</td>
                         <td className="py-3 px-4">{item.product_sku}</td>
                         <td className="py-3 px-4 font-semibold">{item.quantity}</td>
-                        <td className="py-3 px-4">-</td> {/* Unit fallback */}
+                        <td className="py-3 px-4">-</td>
                         <td className="py-3 px-4">
                           {item.expiration_date ? new Date(item.expiration_date).toLocaleDateString() : 'N/A'}
                         </td>

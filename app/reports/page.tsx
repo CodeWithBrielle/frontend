@@ -348,7 +348,7 @@ export default function ReportsPage() {
                         <th className="py-3 px-4 font-medium">SKU</th>
                         <th className="py-3 px-4 font-medium">Branch</th>
                         <th className="py-3 px-4 font-medium">Quantity</th>
-                        <th className="py-3 px-4 font-medium">Unit</th> {/* Added Unit */}
+                        <th className="py-3 px-4 font-medium">Unit</th>
                         <th className="py-3 px-4 font-medium">Expiration Date</th>
                         <th className="py-3 px-4 font-medium">Reorder Level</th>
                         <th className="py-3 px-4 font-medium">Status</th>
@@ -361,7 +361,7 @@ export default function ReportsPage() {
                           <td className="py-3 px-4">{item.product_sku}</td>
                           <td className="py-3 px-4">{item.branch_name}</td>
                           <td className="py-3 px-4 font-semibold">{item.quantity}</td>
-                          <td className="py-3 px-4">{item.unit || "-"}</td> {/* Added Unit */}
+                          <td className="py-3 px-4">{item.unit || "-"}</td>
                           <td className="py-3 px-4">
                             {item.expiration_date ? new Date(item.expiration_date).toLocaleDateString() : 'N/A'}
                           </td>
